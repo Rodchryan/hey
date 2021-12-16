@@ -1,0 +1,1403 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title of the document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+</head>
+    <style>
+     
+html {
+scrollbar-width: normal;
+scrollbar-color: blue red;
+}
+
+
+
+*{
+margin: 0;
+padding: 0;
+
+font-family: 'Poppins', sans-serif;
+}
+
+
+      body{
+font-family: Baloo;
+background-color: black;
+      }
+    
+     
+
+
+
+
+
+
+.animation-area{
+background: linear-gradient(to left, #006400, #0000FF);
+width: 100%;
+height: 100vh;
+}
+
+}
+.banner-text {
+	width: 100%;
+	position: absolute;
+	z-index: 1;
+}
+.banner-text ul {
+	height: 50px;
+	float: right;
+}
+.banner-text ul li {
+	display: inline-block;
+	padding: 40px 15px;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 20px;
+}
+.banner-text ul li:hover {
+	cursor: pointer;
+}
+.banner-text h2 {
+	text-align: center;
+	color: #fff;
+	font-size: 50px;
+	margin-top: 20%;
+}
+
+.box-area {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.box-area li {
+	position: absolute;
+	display: block;
+	list-style: none;
+	width: 25px;
+	height: 25px;
+	background: rgba(255, 255, 255, 0.2);
+	animation: animate 20s linear infinite;
+	bottom: -150px;
+}
+.box-area li:nth-child(1) {
+	left: 86%;
+	width: 80px;
+	height: 80px;
+	animation-delay: 0s;
+}
+.box-area li:nth-child(2) {
+	left: 12%;
+	width: 30px;
+	height: 30px;
+	animation-delay: 1.5s;
+	animation-duration: 10s;
+}
+.box-area li:nth-child(3) {
+	left: 70%;
+	width: 100px;
+	height: 100px;
+	animation-delay: 5.5s;
+}
+.box-area li:nth-child(4) {
+	left: 42%;
+	width: 150px;
+	height: 150px;
+	animation-delay: 0s;
+	animation-duration: 15s;
+}
+.box-area li:nth-child(5) {
+	left: 65%;
+	width: 40px;
+	height: 40px;
+	animation-delay: 0s;
+}
+.box-area li:nth-child(6) {
+	left: 15%;
+	width: 110px;
+	height: 110px;
+	animation-delay: 3.5s;
+}
+@keyframes animate {
+	0% {
+		transform: translateY(0) rotate(0deg);
+		opacity: 1;
+	}
+	100% {
+		transform: translateY(-800px) rotate(360deg);
+		opacity: 0;
+	}
+}
+
+header{
+width: 100%;
+height: 70px;
+background-color: black;
+}
+
+h1{
+position: absolute;
+padding: 3px;
+float: left;
+margin-left: 2%;
+margin-top: 10px;
+font-family: 'Alfa Slab One', cursive;
+color: #39ca74;
+}
+
+span{
+color: #FC6D6D;
+}
+
+a{
+text-align: center;
+color: #ffffff;
+text-decoration: none;
+font-family: 'Open Sans'. sans-serif;
+font-size: 1.2vw;
+}
+
+a:hover {
+color: #f0c330;
+transition: 0.5s;
+}
+
+.una{
+width: 100%;
+margin-top: 0px;
+}
+
+@media only screen and (min-width: 600px) {
+  .col-s-6 {width: 50%;}
+  .col-s-9 {width: 75%;}
+ 
+}
+
+@media only screen and (min-width: 768px) {
+  .col-6 {width: 50%;}
+  .col-9 {width: 75%;}
+
+
+.pangalawa{
+ background-image: url('bi.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+}
+
+.three{
+background-color: white;
+}
+
+.yah{
+font-family: 'Source Sans Pro', sans-serif;
+letter-spacing: 4px;
+}
+
+.btn {
+width: 300px;
+height: 100px;
+border: none;
+color: white;
+background-color: #353535;
+border-radius: 4px;
+transition: ease-out 0.3s;
+font-size: 2rem;
+font-family: 'Alfa Slab One', cursive;
+outline: none;
+border: 6px solid #42FBF2;
+position: relative;
+z-index: 1;
+}
+
+.btn:hover {
+color: black;
+cursor: pointer;
+}
+
+.btn:before {
+transition: 0.5s all ease;
+position: absolute;
+top: 0;
+left: 50%;
+right: 50%;
+bottom: 0;
+opacity: 0;
+content: "";
+background-color: #42FBF2;
+}
+
+.btn:hover:before {
+transition: 0.5s all ease;
+left: 0;
+right: 0;
+opacity: 1;
+z-index: -1;
+}
+
+
+
+.waw {
+position: absolute;
+height: 10px;
+width: 100px;
+}
+
+
+.wrapper{
+display: inline-flex;
+}
+
+.wrapper .static-txt{
+color: #fff;
+font-size: 60px;
+font-weight: 400;
+}
+
+.wrapper .dynamic-txts{
+margin-left: 15px;
+line-height: 90px;
+height: 90px;
+overflow: hidden;
+}
+
+.dynamic-txts li{
+color: #FC6D6D;
+list-style: none;
+font-size: 60px;
+font-weight: 500;
+position: relative;
+top: 0;
+animation: slide 14s steps(4) infinite;
+}
+
+@keyframes slide {
+100%{
+top: -360px;
+}
+}
+.dynamic-txts li span{
+position: relative;
+}
+
+.dynamic-txts li span::after{
+content:"";
+position: absolute;
+left: 0;
+height: 100%;
+width: 100%;
+background: black;
+border-left: 2px solid #FC6D6D;
+animation: typing 3.5s steps(10) infinite;
+}
+
+@keyframes typing {
+100%{
+left: 100%;
+margin: 0 -35px 0 35px;
+}
+}
+
+
+.puta{
+font-size: 80px;
+}
+
+.hui{
+display: flex;
+align-items: center;
+justify-content: center;
+min-height: 20vh;
+background: black;
+}
+
+.joe {
+position: absolute;
+top: 100px;
+}
+
+.joey {
+position: absolute;
+border-radius: 50%;
+top: 5px;
+left: 5px;
+
+}
+
+.joeys {
+position: absolute;
+left: 4%;
+
+}
+
+.girl {
+position: absolute;
+border-radius: 50%;
+top: 490px;
+left: 20px;
+border: 5px solid black;
+}
+
+.girls {
+position: absolute;
+border-radius: 50%;
+top: 230px;
+left: 20px;
+border: 5px solid black;
+}
+
+.boy {
+position: absolute;
+border-radius: 50%;
+top: 100px;
+left: 20px;
+border: 5px solid black;
+}
+
+.boys {
+position: absolute;
+border-radius: 50%;
+top: 360px;
+left: 20px;
+border: 5px solid black;
+}
+
+.cat {
+position: absolute;
+border-radius: 50%;
+top: 620px;
+left: 20px;
+border: 5px solid black;
+}
+
+.meow {
+position: absolute;
+border-radius: 50%;
+top: 750px;
+left: 20px;
+border: 5px solid black;
+}
+
+.bo {
+position: absolute;
+top: 460px;
+left: 430px;
+}
+.a {
+position: absolute;
+top: 1087px;
+left: -20px;
+}
+
+
+.text_wrapper h5{
+font-family: 'Josefin Sans', sans-serif;
+overflow: hidden;
+border-right: .15em solid rgb(87, 56, 56);
+white-space: nowrap;
+margin: 0 auto;
+letter-spacing: 0px;
+font-size: 2vw;
+animation:
+typing 3.5s steps(20, end),
+animated-cursor .5s step-end infinite;
+color: #7FFF00;
+}
+
+@keyframes typing{
+from { width: 0 }
+to { width: 100% }
+}
+
+@keyframes animated-cursor{
+from, to {border-color: transparent}
+50% { border-color: rgb(87, 56, 56)}
+}
+.hoi{
+
+display : flex;
+
+}
+
+
+.letche{
+position: absolute;
+top: 16%;
+left: 200px;
+}
+
+.letches{
+position: absolute;
+top: 30%;
+left: 200px;
+}
+
+.letchess{
+position: absolute;
+top: 44%;
+left: 200px;
+}
+
+.letchesss{
+position: absolute;
+top: 59%;
+left: 200px;
+}
+
+.cruz{
+position: absolute;
+top: 74%;
+left: 200px;
+}
+
+.gonzales{
+position: absolute;
+top: 89%;
+left: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+::selection{
+  color: #fff;
+  background: #d43f8d;
+}
+.container{
+  width: 330px;
+  background: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px 35px 1px 35px;
+}
+.container header{
+  font-size: 35px;
+  font-weight: 600;
+  margin: 0 0 30px 0;
+}
+.container .form-outer{
+  width: 100%;
+  overflow: hidden;
+}
+.container .form-outer form{
+  display: flex;
+  width: 400%;
+}
+.form-outer form .page{
+  width: 25%;
+  transition: margin-left 0.3s ease-in-out;
+}
+.form-outer form .page .title{
+  text-align: left;
+  font-size: 25px;
+  font-weight: 500;
+}
+.form-outer form .page .field{
+  width: 330px;
+  height: 45px;
+  margin: 45px 0;
+  display: flex;
+  position: relative;
+}
+form .page .field .label{
+  position: absolute;
+  top: -30px;
+  font-weight: 500;
+}
+form .page .field input{
+  height: 100%;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding-left: 15px;
+  font-size: 18px;
+}
+form .page .field select{
+  width: 100%;
+  padding-left: 10px;
+  font-size: 17px;
+  font-weight: 500;
+}
+form .page .field button{
+  width: 100%;
+  height: calc(100% + 5px);
+  border: none;
+  background: blue;
+  margin-top: -20px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.5s ease;
+}
+form .page .field button:hover{
+  background: #000;
+}
+form .page .btns button{
+  margin-top: -20px!important;
+}
+form .page .btns button.prev{
+  margin-right: 3px;
+  font-size: 17px;
+}
+form .page .btns button.next{
+  margin-left: 3px;
+}
+.container .progress-bar{
+  display: flex;
+  margin: 40px 0;
+  user-select: none;
+}
+.container .progress-bar .step{
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+.container .progress-bar .step p{
+  font-weight: 500;
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 8px;
+}
+.progress-bar .step .bullet{
+  height: 25px;
+  width: 25px;
+  border: 2px solid #000;
+  display: inline-block;
+  border-radius: 50%;
+  position: relative;
+  transition: 0.2s;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 25px;
+}
+.progress-bar .step .bullet.active{
+  border-color: red;
+  background: blue;
+}
+.progress-bar .step .bullet span{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.progress-bar .step .bullet.active span{
+  display: none;
+}
+.progress-bar .step .bullet:before,
+.progress-bar .step .bullet:after{
+  position: absolute;
+  content: '';
+  bottom: 11px;
+  right: -51px;
+  height: 3px;
+  width: 44px;
+  background: #262626;
+}
+.progress-bar .step .bullet.active:after{
+  background: blue;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 0.3s linear forwards;
+}
+
+}
+.progress-bar .step:last-child .bullet:before,
+.progress-bar .step:last-child .bullet:after{
+  display: none;
+}
+.progress-bar .step p.active{
+  color: blue;
+  transition: 0.2s linear;
+}
+.progress-bar .step .check{
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  font-size: 15px;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+.progress-bar .step .check.active{
+  display: block;
+  color: #fff;
+}
+
+.jerez{
+position: absolute;
+top: 200px;
+left: 55%
+}
+
+h6{
+font-size:20px;
+font-weight:1000px;
+}
+
+marquee {
+color: red;
+font-size: 50px;
+font-family: 'Alfa Slab One', cursive;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.carousel {
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  perspective: 100rem;
+}
+.carousel__cards {
+  position: relative;
+  width: 20rem;
+  height: 20rem;
+  transform-style: preserve-3d;
+  transform: translateZ(-25rem);
+  transition: transform 0.3s ease-in;
+}
+.carousel__img {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.carousel__card {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border: 2px solid white;
+  border-radius: 0.2rem;
+  font-size: 3em;
+  font-weight: 700;
+}
+.carousel__card:nth-child(1) {
+  transform: rotateY(0deg) translateZ(25rem);
+}
+.carousel__card:nth-child(2) {
+  transform: rotateY(45deg) translateZ(25rem);
+}
+.carousel__card:nth-child(3) {
+  transform: rotateY(90deg) translateZ(25rem);
+}
+.carousel__card:nth-child(4) {
+  transform: rotateY(135deg) translateZ(25rem);
+}
+.carousel__card:nth-child(5) {
+  transform: rotateY(180deg) translateZ(25rem);
+}
+.carousel__card:nth-child(6) {
+  transform: rotateY(225deg) translateZ(25rem);
+}
+.carousel__card:nth-child(7) {
+  transform: rotateY(270deg) translateZ(25rem);
+}
+.carousel__card:nth-child(8) {
+  transform: rotateY(315deg) translateZ(25rem);
+}
+.carousel__btn {
+  outline: none;
+  border: none;
+  border-radius: 0.2rem;
+  background: #00599c;
+  padding: 0.5em 1em;
+  font-size: 1.2em;
+  font-weight: 500;
+  color: #ffffff;
+  cursor: pointer;
+  margin: 0 2rem;
+  margin-top: 20px;
+}
+.carousel__btn:hover {
+  transform: scale(1.04);
+  background: #000000;
+}
+
+
+@font-face {
+  font-family: 'Staatliches';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/staatliches/v6/HI_OiY8KO6hCsQSoAPmtMYeVvpCNOw.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Staatliches';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/staatliches/v6/HI_OiY8KO6hCsQSoAPmtMYebvpA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hey{
+	font-family: arial;
+	font-size: 16px;
+	margin: 0;
+	background: linear-gradient(to bottom right,#394aff , #34fa94);
+	min-height: 200vh;
+	
+}
+.containers{
+	width: 100%;
+       
+	max-width: 1200px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.column{
+	flex: 0 0 40%;
+}
+
+.card{
+	border:5px solid red;
+	min-height: 100%;
+	position: relative;
+	background:#000;
+	transition: all 0.3s ease-out;
+}
+.card .desciption-wrap{
+	padding:105px 30px;
+	position: relative;
+	overflow: hidden;
+}
+.card .description{
+	color: #fff;
+	text-align: center;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+	flex-wrap: wrap;
+	font-size: 20px;
+	line-height: 1.4;
+	transition: all 0.5s ease-out;
+	overflow-x: auto;
+	transform:translateY(100%);
+	opacity: 0;
+}
+.card .description > *{
+	width: 100%;
+}
+.card .description h3{
+	margin: 0;
+	font-size: 26px;
+}
+.card .description h4{
+	margin: 0;
+}
+.card .description ul{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.card .description ul li{
+	display: inline-block;
+	width: 40px;
+	margin: 0 10px;
+	transition: all 0.3s ease-out;
+	transform: perspective(1000px)
+	rotateX(0deg);
+}
+.card .description ul li:hover{
+	transform: perspective(1000px)
+	rotateX(30deg);
+	transform-style: preserve-3d;
+}
+.card .description ul li img{
+	max-width: 100%;
+}
+
+.pro-pic{
+	position: absolute;
+	left: 50%;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	transform: translateX(-50%);
+	background-size: cover;
+	background-position: center center;
+	transition: all 0.5s ease-out;
+}
+.card:hover .pro-pic{
+	transform:translate(-50%,-50%);
+	width: 150px;
+	height: 150px;
+	border-radius: 50%
+}
+.card:hover{
+	border-radius: 50px;
+}
+.card:hover .description{
+	transform:translateY(0%);
+	opacity: 1;
+}
+</style>
+
+<body>
+<header>
+<span><div class="banner-area"><img class="joey" src="logo.jpg" width=60 height=60>
+<h1 class="joeys">SCC<span>&nbsp;Samuel Christian College</span></h1>
+</div></span>
+</header>
+
+
+
+
+
+<div class="animation-area">
+
+
+<img class="girl" src="girl1.jpg" width=120 height=120>
+<img class="boy" src="rodch.jpg" width=120 height=120>
+<img class="girls" src="jinky.jpg" width=120 height=120>
+<img class="boys" src="jerez.jpg" width=120 height=120>
+<img class="cat" src="mic.jpg" width=120 height=120>
+<img class="meow" src="ger.jpg" width=120 height=120>
+<img class="a" src="tchrss.png" width=1300 height=310>
+
+<ul class="box-area">
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+</div>
+</div>
+
+
+<div class="jerez">
+ <div class="container">
+         <h6>Registration Form</h6>
+         <div class="progress-bar">
+            <div class="step">
+               <p>
+                  Name
+               </p>
+               <div class="bullet">
+                  <span>1</span>
+               </div>
+               <div class="check fas fa-check"></div>
+            </div>
+            <div class="step">
+               <p>
+                  Contact
+               </p>
+               <div class="bullet">
+                  <span>2</span>
+               </div>
+               <div class="check fas fa-check"></div>
+            </div>
+            <div class="step">
+               <p>
+                  Birth
+               </p>
+               <div class="bullet">
+                  <span>3</span>
+               </div>
+               <div class="check fas fa-check"></div>
+            </div>
+            <div class="step">
+               <p>
+                  Submit
+               </p>
+               <div class="bullet">
+                  <span>4</span>
+               </div>
+               <div class="check fas fa-check"></div>
+            </div>
+         </div>
+         <div class="form-outer">
+            <form action="#">
+               <div class="page slide-page">
+                  <div class="title">
+                     Basic Info:
+                  </div>
+                  <div class="field">
+                     <div class="label">
+                        First Name
+                     </div>
+                     <input type="text">
+                  </div>
+                  <div class="field">
+                     <div class="label">
+                        Last Name
+                     </div>
+                     <input type="text">
+                  </div>
+                  <div class="field">
+                     <button class="firstNext next">Next</button>
+                  </div>
+               </div>
+               <div class="page">
+                  <div class="title">
+                     Contact Info:
+                  </div>
+                  <div class="field">
+                     <div class="label">
+                        Email Address
+                     </div>
+                     <input type="text">
+                  </div>
+                  <div class="field">
+                     <div class="label">
+                        Phone Number
+                     </div>
+                     <input type="Number">
+                  </div>
+                  <div class="field btns">
+                     <button class="prev-1 prev">Previous</button>
+                     <button class="next-1 next">Next</button>
+                  </div>
+               </div>
+               <div class="page">
+                  <div class="title">
+                     Date of Birth:
+                  </div>
+                  <div class="field">
+                     <div class="label">
+                        Date
+                     </div>
+                     <input type="text">
+                  </div>
+                  <div class="field">
+                     <div class="label">
+                        Gender
+                     </div>
+                     <select>
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Other</option>
+                     </select>
+                  </div>
+                  <div class="field btns">
+                     <button class="prev-2 prev">Previous</button>
+                     <button class="next-2 next">Next</button>
+                  </div>
+               </div>
+               <div class="page">
+                  <div class="title">
+                     Silid.lms Login Details:
+                  </div>
+                  <div class="field">
+                     <div class="label">
+                        Username
+                     </div>
+                     <input type="text">
+                  </div>
+                  <div class="field">
+                     <div class="label">
+                        Password
+                     </div>
+                     <input type="password">
+                  </div>
+                  <div class="field btns">
+                     <button class="prev-3 prev">Previous</button>
+                     <button class="submit">Submit</button>
+                  </div>
+               </div>
+            </form>
+         </div>
+      </div>
+<script src="script.js"></script>
+
+
+</div>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+
+
+</div><br><br><br><br><br><br>
+<div class="three">
+<img class="una" src="scc.png"><br><br>
+</div><br>
+
+<div>
+<div class="letche"
+<diV class="hoi">
+<div class="text_wrapper">
+<h5>Rodch Ryan C. Sagales</h5>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+<div>
+<div class="letches"
+<diV class="hoi">
+<div class="text_wrapper">
+<h5>Nicole Jinky Y. Castromero</h5>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div>
+<div class="letchess"
+<diV class="hoi">
+<div class="text_wrapper">
+<h5>Jerez Noriel G. Bondad</h5>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div>
+<div class="letchesss">
+<diV class="hoi">
+<div class="text_wrapper">
+<h5>Jennifer Leigh S. Chio</h5>
+</div>
+</div>
+</div>
+</div>
+
+<div>
+<div class="cruz"
+<diV class="hoi">
+<div class="text_wrapper">
+<h5>Michael Justine O. Cruz</h5>
+</div>
+</div>
+</div>
+</div>
+
+<div>
+<div class="gonzales"
+<diV class="hoi">
+<div class="text_wrapper">
+<h5>Gerrico S. Gonzales</h5>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div class="carousel">
+<marquee><h3>Available Strands for incoming grade 11 students & Courses For incoming College students at SCC&nbsp;&nbsp;&nbsp;Available Strands for incoming grade 11 students & Courses For incoming College students at SCC&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Available Strands for incoming grade 11 students & Courses For incoming College students at SCC&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3></marquee>
+
+  <div class="carousel__cards">
+    <div class="carousel__card">
+      <img class="carousel__img"
+           src="one.jpg">
+    </div>
+    <div class="carousel__card">
+      <img class="carousel__img"
+           src="two.jpg">
+    </div>
+    <div class="carousel__card">
+      <img class="carousel__img"
+           src="three.jpg">
+    </div>
+    <div class="carousel__card">
+      <img class="carousel__img"
+           src="four.jpg">
+    </div>
+    <div class="carousel__card">
+      <img class="carousel__img"
+           src="five.jpg">
+    </div>
+    <div class="carousel__card">
+      <img class="carousel__img"
+           src="six.jpg">
+    </div>
+    <div class="carousel__card">
+      <img class="carousel__img"
+           src="seven.jpg">
+    </div>
+    <div class="carousel__card">
+      <img class="carousel__img"
+           src="eight.jpg">
+    </div>
+
+  </div>
+  <div class="carousel__control">
+    <button class="carousel__btn carousel__btn--back">&#8678; Prev</button>
+    <button class="carousel__btn carousel__btn--next">Next &#8680;</button>
+  </div>
+</div>
+ 
+ 
+    <script>
+ const next = document.querySelector(".carousel__btn--next"),
+  back = document.querySelector(".carousel__btn--back"),
+  carousel = document.querySelector(".carousel__cards");
+let angle = 0;
+
+next.addEventListener("click", () => {
+  angle -= 45;
+  carousel.style.transform = `translateZ(-25rem) rotateY(${angle}deg)`;
+});
+
+back.addEventListener("click", () => {
+  angle += 45;
+  carousel.style.transform = `translateZ(-25rem) rotateY(${angle}deg)`;
+});
+
+    </script>
+
+
+<br><br><br><br><br><br><br><br>
+<div class="hey">
+
+
+<br><br><br><br><br><br><br><br>
+<div class="containers">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<div class="column">
+		<div class="card">
+			<div class="pro-pic" style="background-image:url(f.png);"></div>
+			<div class="desciption-wrap">
+				<div class="description">
+					<h3>Raymart Esguerra</h3>
+					<h4>Adviser</h4>
+					<p>Si sir ray ay isa sa pinaka nakaka aliw na guro, siya din ay magaling magturo. Sir sorry po pala sa pic na nailagay namin, wala po kasi kaming mahanap na iba. Labyu po sir papatatak kami tshirt next time.</p>
+					<ul>
+						<li><a href="https://www.facebook.com/raymartesguerra.sccgti"><img src="fb.png"></a></li>
+						<li><img src="ig.png"></li>
+						<li><img src="tw.png"></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<div class="column">
+		<div class="card">
+			<div class="pro-pic" style="background-image:url(e.png);"></div>
+			<div class="desciption-wrap">
+				<div class="description">
+					<h3>Justin Jay Ramboyong</h3>
+					<h4>.Net Communication</h4>
+					<p>Hello sir justinnn! Ampogi niyo pala nung binata pa kayo, wala po kasi kaming mahanap na maayos kaya eto nalang pong mejo bata pa kayo. Tapos sir ang dami naming natututunan sainyo, labyuu.</p>
+					<ul>
+						<li><a href="https://www.facebook.com/profile.php?id=100071767215519"><img src="fb.png"></a></li>
+						<li><img src="ig.png"></li>
+						<li><img src="tw.png"></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<br><br><br><br>
+<div class="containers">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<div class="column">
+		<div class="card">
+			<div class="pro-pic" style="background-image:url(a.png);"></div>
+			<div class="desciption-wrap">
+				<div class="description">
+					<h3>Bryan Niegas</h3>
+					<h4>Earth and Life Science</h4>
+					<p>Sirrrr Bryannnn! Ansaya sa klase niyo, nakakaaliw! Mejo nakakatakot po kayo minsan, pero minsan den po parang ang gwapo niyo lalo. Tapos marami ding trivia ang nakukuha namin sainyo, labyuu.</p>
+					<ul>
+						<li><a href="https://www.facebook.com/profile.php?id=100071398575761"><img src="fb.png"></a></li>
+						<li><img src="ig.png"></li>
+						<li><img src="tw.png"></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<div class="column">
+		<div class="card">
+			<div class="pro-pic" style="background-image:url(b.png);"></div>
+			<div class="desciption-wrap">
+				<div class="description">
+					<h3>Rjhay Capatoy</h3>
+					<h4>Oral Communication</h4>
+					<p>Hiiiii sir! Ang galing niyo po mag english parang foreigner po kayo, pero hindi naman talaga. Nakakaaliw din po kayo mag turo, masaya po! Labyuu po.</p>
+					<ul>
+						<li><a href="https://www.facebook.com/profile.php?id=100069464774999"><img src="fb.png"></a></li>
+						<li><img src="ig.png"></li>
+						<li><img src="tw.png"></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+</div><br><br><br><br>
+<div class="containers">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<div class="column">
+		<div class="card">
+			<div class="pro-pic" style="background-image:url(c.png);"></div>
+			<div class="desciption-wrap">
+				<div class="description">
+					<h3>Patrick Bale</h3>
+					<h4>Komunikasyon at Pananaliksik sa Wika at Kulturang Pilipino</h4>
+					<p>Helllooo! Sir bat sobrang puti niyo lagi sa google meet? Mejo nakakatawa din po kayo, masaya sa klase niyo. Labyuuu.</p>
+					<ul>
+						<li><a href="https://www.facebook.com/sccpatrick.bale"><img src="fb.png"></a></li>
+						<li><img src="ig.png"></li>
+						<li><img src="tw.png"></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<div class="column">
+		<div class="card">
+			<div class="pro-pic" style="background-image:url(d.png);"></div>
+			<div class="desciption-wrap">
+				<div class="description">
+					<h3>Feihl Jocson</h3>
+					<h4>Physical Education and Health</h4>
+					<p>Hi sir Feihl! Magaling po kayu magturo. Mukhang mejo mabait din po kayo sa personal. Labyuu.</p>
+					<ul>
+						<li><a href="https://www.facebook.com/profile.php?id=100066332151867"><img src="fb.png"></a></li>
+						<li><img src="ig.png"></li>
+						<li><img src="tw.png"></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div></div>
+<br><br>
+
+<div style="text-align:center"> 
+  <button class="btn" onclick="playPause()" >PLAY/PAUSE</button> 
+  <br><br>
+  <video id="video1" width="1200">
+    <source src="vid.mp4" type="video/mp4">
+    <source src="mov_bbb.ogg" type="video/ogg">
+    Your browser does not support HTML video.
+  </video>
+</div> 
+<br><br><br><br><br><br><br><br>
+
+<script> 
+var myVideo = document.getElementById("video1"); 
+
+function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+
+</script>
+  </body>
+</html>
